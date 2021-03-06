@@ -1,0 +1,7 @@
+https://howistart.org/posts/go/1/
+
+go build
+./hello-go
+
+go get github.com/paulkarayan/hello-go
+$GOPATH/bin/hello-go
