@@ -23,3 +23,7 @@ go test ~/go-wks/src/github.com/paulkarayan/hello-go
 # see all packages install on my system
 godoc -http :8000 -goroot ~/go-wks/src/github.com/paulkarayan/hello-go
 http://localhost:8000/pkg/
+
+
+t.Helper() is needed to tell the test suite that this method is a helper.
+By doing this when it fails the line number reported will be in our function call rather than inside our test helper.
