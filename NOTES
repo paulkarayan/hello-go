@@ -5,3 +5,9 @@ go build
 
 go get github.com/paulkarayan/hello-go
 $GOPATH/bin/hello-go
+
+curl http://localhost:8080
+
+499d596ddaae4d4f27e97b07c6a1de22
+
+curl http://localhost:8080/weather/tokyo
