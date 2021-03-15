@@ -11,3 +11,15 @@ curl http://localhost:8080
 499d596ddaae4d4f27e97b07c6a1de22
 
 curl http://localhost:8080/weather/tokyo
+
+
+---
+
+https://github.com/quii/learn-go-with-tests/blob/master/hello-world.md
+
+go run ~/go-wks/src/github.com/paulkarayan/hello-go/hello.go
+go test ~/go-wks/src/github.com/paulkarayan/hello-go
+
+# see all packages install on my system
+godoc -http :8000 -goroot ~/go-wks/src/github.com/paulkarayan/hello-go
+http://localhost:8000/pkg/
