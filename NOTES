@@ -45,3 +45,6 @@ go test ~/go-wks/src/github.com/paulkarayan/hello-go/integers
 
 go run ~/go-wks/src/github.com/paulkarayan/hello-go/iterator/iterator.go
 go test ~/go-wks/src/github.com/paulkarayan/hello-go/iterator
+
+# benchmarks
+go test -bench=. ~/go-wks/src/github.com/paulkarayan/hello-go/iterator
