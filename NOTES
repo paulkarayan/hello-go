@@ -48,3 +48,28 @@ go test ~/go-wks/src/github.com/paulkarayan/hello-go/iterator
 
 # benchmarks
 go test -bench=. ~/go-wks/src/github.com/paulkarayan/hello-go/iterator
+
+-- arrays
+
+Arrays have a fixed capacity which you define when you declare the variable. We can initialize an array in two ways:
+
+[N]type{value1, value2, ..., valueN} e.g. numbers := [5]int{1, 2, 3, 4, 5}
+[...]type{value1, value2, ..., valueN} e.g. numbers := [...]int{1, 2, 3, 4, 5}
+
+go test ~/go-wks/src/github.com/paulkarayan/hello-go/arrays
+
+Array:
+[5]int{1, 2, 3, 4, 5}
+Slice:
+[]int{1, 2, 3, 4, 5}
+
+go test -cover ~/go-wks/src/github.com/paulkarayan/hello-go/arrays
+
+
+Go does not let you use equality operators with slices.
+we can use reflect.DeepEqual which is useful for seeing if any two variables are the same.
+=> not type safe!!
+
+
+"variadic functions" - arbitrary number of inputs
+func sum(nums ...int) {
