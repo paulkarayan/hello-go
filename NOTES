@@ -73,3 +73,16 @@ we can use reflect.DeepEqual which is useful for seeing if any two variables are
 
 "variadic functions" - arbitrary number of inputs
 func sum(nums ...int) {
+
+
+--- structs
+
+go test ~/go-wks/src/github.com/paulkarayan/hello-go/structs
+
+methods:
+func (receiverName ReceiverType) MethodName(args)
+
+It is a convention in Go to have the receiver variable be the first letter of the type.
+
+
+In Go interface resolution is implicit. If the type you pass in matches what the interface is asking for, it will compile.
