@@ -86,3 +86,7 @@ It is a convention in Go to have the receiver variable be the first letter of th
 
 
 In Go interface resolution is implicit. If the type you pass in matches what the interface is asking for, it will compile.
+
+-- pointers and errors
+
+go test ~/go-wks/src/github.com/paulkarayan/hello-go/pointers
