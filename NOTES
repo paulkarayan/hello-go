@@ -94,3 +94,9 @@ go test ~/go-wks/src/github.com/paulkarayan/hello-go/pointers
 In Go, when you call a function or a method the arguments are copied.
 
 struct pointers and they are automatically dereferenced.
+
+-- maps
+
+A gotcha that reference types introduce is that maps can be a nil value.
+A nil map behaves like an empty map when reading,
+but attempts to write to a nil map will cause a runtime panic.
