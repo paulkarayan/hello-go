@@ -100,3 +100,11 @@ struct pointers and they are automatically dereferenced.
 A gotcha that reference types introduce is that maps can be a nil value.
 A nil map behaves like an empty map when reading,
 but attempts to write to a nil map will cause a runtime panic.
+
+-- http-server
+
+go test ~/go-wks/src/github.com/paulkarayan/hello-go/http-server
+
+cd ~/go-wks/src/github.com/paulkarayan/hello-go/http-server
+go build
+./http-server
